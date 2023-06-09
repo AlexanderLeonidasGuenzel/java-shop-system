@@ -2,7 +2,8 @@ package shop;
 
 public class Main {
 
-    Product p = new Product("1232384","toothbrush");
-
-
+    public static void main(String[] args) {
+        ShopService shop = new ShopService();
+        System.out.println(shop.listProducts()); //
+    }
 }

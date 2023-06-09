@@ -36,4 +36,9 @@ public class Product {
     public int hashCode() {
         return Objects.hash(id, name);
     }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + "\n";
+    }
 }
