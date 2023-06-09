@@ -16,6 +16,19 @@ public class Order {
         this.products = new HashMap<>();
     }
 
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id='" + id + '\'' +
+                ", products=" + products +
+                '}';
+    }
+
+    public Order(String id, Product productToBuy) {
+        this(id);
+        this.products.put(productToBuy.getName(), productToBuy);
+    }
+
 
     public String getId() {
         return id;
