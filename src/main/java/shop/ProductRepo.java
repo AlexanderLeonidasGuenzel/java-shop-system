@@ -54,8 +54,7 @@ public class ProductRepo {
 
     @Override
     public String toString() {
-        return "ProductRepo{" +
-                "products=" + products +
-                '}';
+        return "[" +products +']';
     }
+
 }
